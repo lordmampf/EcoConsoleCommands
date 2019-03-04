@@ -23,7 +23,7 @@ namespace EcoConsoleCommands
             string command = text.Substring(0, text.IndexOf(" "));
             string parameters = text.Substring(text.IndexOf(" ")).Trim();
 
-            switch (command)
+            switch (command.ToLower())
             {
                 case "say":
                     {
